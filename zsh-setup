@@ -1,0 +1,26 @@
+# setting up ZSH and customizing
+
+Instal oh-my-zfs 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Now customize
+
+# Powerlevel 9 theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+Edit ~/.zshrc and set as default theme:
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+download Install the font for powerlevel 9
+https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf
+once downloaded, just double click on the file and it will install the font
+
+Set the font iTerm, make sure size is 14pt: iTerm → Preferences → Profiles → Text → Change Font
+and select source code pro font
+
+# install syntax highlighting
+brew install zsh-syntax-highlighting
+
+Skip to the end of ~/.zshrc and add the line: source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
